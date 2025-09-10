@@ -22,9 +22,8 @@ so that have to be told this is HTML version 5, the latest and greatest.
 <body>
     <h1>Hello World</h1>
     <p> This html document is missing a head element, thats OK.<p>
-    <p> The DOCTYPE html declaration tells 
-        the browser this is a HTML 5 document</p>
-    
+    <p> DOCTYPE html is a declaration, note the exclamation mark.</p>
+    <p> Special instruction to browser: what follows is HTML5</p>
 </body>
 </html>
 ```
@@ -51,11 +50,21 @@ so that have to be told this is HTML version 5, the latest and greatest.
 <head>
     <title>Hello World Title</title>
     <style>
+        h1 {
+            color: red;
+        }
     </style>
+    <script>
+       function button_clicked() {
+          const p = document.querySelector("#para");
+          p.textContent = "Button clicked!";
+       }
+    </script>
 </head>
 <body>
     <h1>Hello World</h1>
-    
+    <p id="para"></p>
+    <button onclick="button_clicked()">Click me</button>
 </body>
 </html>
 ```
