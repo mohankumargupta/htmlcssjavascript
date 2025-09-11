@@ -7,6 +7,8 @@ import Icons from 'unplugin-icons/vite';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://mohankumargupta.github.io',
+	base: process.env.GITHUB_ACTIONS ? '/htmlcssjavascript' : '/',
 	integrations: [
 		starlight({
 			title: 'HTML+CSS+Javascript',
