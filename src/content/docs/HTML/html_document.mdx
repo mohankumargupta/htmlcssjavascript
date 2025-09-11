@@ -4,15 +4,14 @@ description: HTML 5 document
 order: 1
 ---
 
-1. A webpage is edited with a **HTML document**.
+import { Aside } from '@astrojs/starlight/components';
+import HTML5Icon from '~icons/devicon/html5-wordmark';
 
-2. The document is of type **HTML5** document.
 
-3. HTML/CSS/Javascript have been around since the 90s 
+1. A webpage is described with a **HTML document**.
 
-4. **HTML5** is the successor to previous HTML versions. Browsers still support the old versions,
-so that have to be told this is HTML version 5, the latest and greatest. 
-
+2. The document is of type **HTML5** document .
+   <HTML5Icon display="inline !important" font-size="3rem"/>
 
 ## Minimal HTML 5 document
 
@@ -22,26 +21,13 @@ so that have to be told this is HTML version 5, the latest and greatest.
 <body>
     <h1>Hello World</h1>
     <p> This html document is missing a head element, thats OK.<p>
-    <p> DOCTYPE html is a declaration, note the exclamation mark.</p>
-    <p> Special instruction to browser: what follows is HTML5</p>
 </body>
 </html>
 ```
 
-## HTML 5 document with HEAD
-
-```html title="index.html"
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Hello World Title</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-    <p> Now has head element <p>
-</body>
-</html>
-```
+<Aside>
+The &lt;!DOCTYPE html&gt; declaration tells the browser that what follows is a HTML 5 document
+</Aside>
 
 ## HTML with internal CSS and JS
 ```html title="index.html"
@@ -72,4 +58,4 @@ so that have to be told this is HTML version 5, the latest and greatest.
 
 ## Further reading
 
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
+

@@ -4,3 +4,36 @@ description: HTML Elements
 order: 2
 ---
 
+import { Aside } from '@astrojs/starlight/components';
+
+<img width="800px" src="https://camo.githubusercontent.com/32d33469fc5a474866077e87c5fbbb7ad1a11fec057ae083987a12e46cec9f4e/68747470733a2f2f77696b696d656469612e6f72672f6170692f726573745f76312f6d656469612f6d6174682f72656e6465722f7376672f33373530363132376630373330643962363033353533306634366337303661663465323331396434"/>
+
+
+## Tags with text content
+
+```html
+<p>Some text content.</p>
+```
+
+## Self closing tags
+
+```html
+<img src="https://google.com"/>
+```
+
+## Nested elements
+
+The div element below has two children elements.
+
+```html
+<div>
+  <p>First child</p>
+  <p>Second child</p>
+</div>
+```
+
+<Aside>
+The BODY element itself is a nested element.
+
+It contains other HTML elements, not text content.
+</Aside>
