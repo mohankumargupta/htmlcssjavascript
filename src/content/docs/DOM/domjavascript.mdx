@@ -1,0 +1,76 @@
+---
+title: How to access DOM in javascript
+description: DOM Basics
+order: 1
+---
+import {Aside} from '@astrojs/starlight/components';
+
+Through the **document** object.
+
+Open your browser’s console(Right click->Inspect->Console).
+
+```js
+console.log(document);
+```
+
+
+
+
+<Aside>
+When you CHANGE the DOM, you change the PAGE. 
+
+Want to change a static HTML page with javascript?
+
+1. get access to DOM
+2. change the DOM
+3. changing the DOM = changing the page
+
+What do you want to change?
+1. A HTML element by its tag name.
+2. A HTML element by its **id** attribute.
+3. A HTML element by its **class** attribute.
+</Aside>
+
+
+
+
+
+For the examples below, I'm using <a target="_blank" href="https://example.com">example.com</a> as an example.
+## Grab an element by tag name
+
+```js title="grab.js"
+// Grab the Heading
+const heading = document.querySelector("h1");
+console.log(heading.textContent);
+```
+
+## Change an element by tag name
+
+```js title="change.js"
+// Change the heading
+const heading = document.querySelector("h1");
+heading.textContent = "Hello World"
+```
+
+## Grab the title as shown on the browser tab.
+
+```js title="title.js"
+// Corresponds to title element inside head element 
+// <html>
+//  <head>
+//   <title>Example Domain</title>
+//  </head>
+// </html>
+const title = document.title;
+console.log(title);
+```
+
+## Change the title as shown on the browser tab.
+```js title="set_title.js"
+// Change the heading
+const title = document.title;
+heading.textContent = "Hello World"
+```
+
+
+

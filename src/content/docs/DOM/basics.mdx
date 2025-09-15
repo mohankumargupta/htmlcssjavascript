@@ -1,0 +1,42 @@
+---
+title: How DOM works
+description: DOM Basics
+order: 1
+---
+
+## DOM Minimal example
+
+![basic html](/htmlminimal.png)
+
+![basic html DOM](/htmlminimaldom.png)
+## HTML Parsing
+The browser starts at the top:
+
+1. It sees &lt;html&gt;→ creates the root &lt;html&gt; node.
+2. Inside it sees &lt;body> → makes a &lt;body&gt; node.
+3. Inside &lt;body&gt;
+    * &lt;h1&gt; → creates a heading node with text "Hello".
+    * &lt;p&gt; → creates a paragraph node with text "World".
+4. Each DOM node corresponds to a HTML element.
+5. The DOM is hierarchical, like files and folders, there is a parent-child relationship between nodes.
+
+## Javascript
+
+```js title="index.js"
+// change the paragraph from World to Everyone
+let para = document.querySelector("p");
+para.textContent = "Everyone";
+```
+
+Now javascript has changed the DOM
+
+![Changed DOM](/htmldomchanged.png)
+
+... so the webpage changes.
+
+
+
+
+
+
+

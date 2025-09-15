@@ -31,6 +31,14 @@ export default defineConfig({
 					autogenerate: { directory: 'Javascript' },
 				},
 				{
+					label: 'Javascript In The Browser',
+					autogenerate: { directory: 'JavascriptInBrowser' },
+				},
+				{
+					label: 'Document Object Model(DOM)',
+					autogenerate: { directory: 'DOM' },
+				},
+				{
 					label: 'Examples',
 					autogenerate: { directory: 'Examples' },
 				},								
