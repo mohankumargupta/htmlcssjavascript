@@ -37,3 +37,25 @@ The BODY element itself is a nested element.
 
 It contains other HTML elements, not text content.
 </Aside>
+
+## Access element in javascript
+
+The argument passed to **document.querySelector** is a CSS selector.
+
+```js title="tag.js"
+// Access by tag name(eg. h1)
+const element = document.querySelector("h1");
+console.log(element);
+```
+
+```js title="id.js"
+// Access by attribute called id(eg. cookie)
+const element = document.querySelector("#cookie");
+console.log(element);
+```
+
+```js title="class.js"
+// Access by attribute called class(eg. yummy)
+const element = document.querySelector(".yummy");
+console.log(element);
+```
