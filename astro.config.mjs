@@ -3,8 +3,6 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import Icons from 'unplugin-icons/vite';
 
-
-
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://mohankumargupta.github.io',
@@ -27,6 +25,10 @@ export default defineConfig({
 					label: 'CSS',
 					autogenerate: { directory: 'CSS' },
 				},
+				{
+					label: 'Developer(inspect) tool',
+					autogenerate: { directory: 'DeveloperTools' },
+				},				
 				{
 					label: 'Javascript',
 					autogenerate: { directory: 'Javascript' },
