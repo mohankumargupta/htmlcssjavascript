@@ -11,6 +11,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'HTML+CSS+Javascript',
+			customCss: ['./src/styles/custom.css'],
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/mohankumargupta/htmlcssjavascript' }],
 			sidebar: [
 				{

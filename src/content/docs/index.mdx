@@ -1,6 +1,6 @@
 ---
-title: Webpage Technologies
-description: Get started building your docs site with Starlight.
+title: HTML/CSS/Javascript
+description: HTML CSS Javascript
 # template: splash
 # hero:
 # #   tagline: Congrats on setting up a new Starlight project!
@@ -16,18 +16,18 @@ description: Get started building your docs site with Starlight.
 #       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkButton  } from '@astrojs/starlight/components';
 
 ## Online playgrounds
 
 <CardGrid>
 	<Card title="LiveWeave" icon="figma">
-		https://liveweave.com/
+		<a target="_blank" href="https://liveweave.com/">liveweave.com</a>
 
 		Excellent, includes live preview.
 	</Card>
 	<Card title="Stackblitz" icon="add-document">
-	    https://mohankumargupta.github.io/quasarhelloworld
+	    <a target="_blank" href="https://mohankumargupta.github.io/quasarhelloworld">stackblitz.com</a>
 		
 		Click **Edit Code**, won't work on restricted computers.
  
@@ -35,3 +35,20 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 
 	</Card>
 </CardGrid>
+<br/><br/>
+
+## Further Reading
+
+https://www.learn-html.org/
+
+
+
+
+
+<div style="display: flex;">
+	<div style="display: flex; width: 100%; justify-items: center;align-items: center;">
+		<LinkButton href="/htmlcssjavascript/html/html_document" >Getting Started</LinkButton>
+	</div>
+</div>
+
+
