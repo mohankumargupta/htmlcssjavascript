@@ -1,0 +1,47 @@
+---
+title: How to access DOM in javascript
+description: DOM Basics
+sidebar:
+  order: 1
+---
+
+## Basics
+
+```js
+// Select by tag
+let p = document.querySelector("p");
+
+// Select by HTML element id attribute
+let element = document.querySelector("#myId");
+
+// Select by HTML element class attribute
+let first = document.querySelector(".myClass");
+
+// Select all elements with class
+let all = document.querySelectorAll(".myClass");
+
+
+
+// Select all tags
+let paras = document.querySelectorAll("p");
+
+// Nested selector
+let nested = document.querySelector("div.container p.note");
+
+// Attribute selector
+let link = document.querySelector("a[href='https://example.com']");
+
+// Attribute starts with (^), ends with ($), contains (*)
+let starts = document.querySelector("img[src^='https://']");
+let ends   = document.querySelector("img[src$='.png']");
+let has    = document.querySelector("a[href*='example']");
+
+// Pseudo-classes
+let firstItem = document.querySelector("ul li:first-child");
+let lastItem  = document.querySelector("ul li:last-child");
+let nthItem   = document.querySelector("ul li:nth-child(2)");
+
+// All matching items
+document.querySelector
+
+```

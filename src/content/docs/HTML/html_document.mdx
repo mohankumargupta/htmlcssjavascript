@@ -1,7 +1,8 @@
 ---
 title: HTML Document
 description: HTML 5 document
-order: 1
+sidebar:
+  order: 1
 ---
 
 import { Aside } from '@astrojs/starlight/components';
@@ -57,7 +58,15 @@ The &lt;!DOCTYPE html&gt; declaration tells the browser that what follows is a H
 
 ## Access document in javascript
 
-```js title="document.js"
+Better to use this when walking the DOM tree 
+
+```js title="console-dir-document.js"
+console.dir(document);
+```
+
+Than this one
+
+```js title="console-log-document.js"
 console.log(document);
 ```
 
