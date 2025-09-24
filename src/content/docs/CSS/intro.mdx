@@ -5,16 +5,52 @@ sidebar:
   order: 1
 ---
 
-CSS concepts:
+```css title="index.css"
 
-- rules (what styles to apply to HTML elements)
-- CSS selectors(to which HTML elements to apply those style to, can be picky)
-- using HTML element attributes **id** and **class** to style HTML elements. 
+/* Colors and background*/
+body {
+  color: red;                 /* text color */
+  background-color: yellow;   /* background color */
+  background-image: url(bg.png); /* background image*/
+}
 
-## How to access in javascript
+/* Text */
+body {
+  font-size: 16px;     /* text size */
+  font-weight: bold;   /* bold, normal, lighter */
+  text-align: center;  /* left, right, center */
+  text-decoration: underline; /* underline, none */
+}
+
+/* CSS Box model */
+body {
+  width: 200px;
+  height: 100px;  
+  margin: 10px;    /* space outside */
+  padding: 10px;   /* space inside */
+  border: 2px solid black;
+  
+}
+
+/* Display and Position*/
+body {
+  display: block;     /* block, inline, flex, none */
+  position: relative; /* static, relative, absolute, fixed */
+  top: 10px; left: 20px;
+}
+
+/* Others */
+body {
+  border-radius: 10px;   /* rounded corners */
+  box-shadow: 2px 2px 5px gray;
+  opacity: 0.5;     
+}
+
+```
+
+## How to modify CSS in javascript
 
 CSS can be modified in javascript.
 
 
-## Further Reading
 
