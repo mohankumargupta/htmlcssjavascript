@@ -5,8 +5,8 @@ sidebar:
   order: 3
 ---
 
-1.Some attributes are global(apply to all HTML elements)
-2.Some attributes only apply to select few HTML elements
+1. Global attributes apply to ALL HTML elements
+2. Other attributes only apply to a number of HTML elements
 
 ## Global attributes
 
@@ -22,6 +22,16 @@ sidebar:
 - height
 - alt
 
+## How to modify attributes with javascript
+
+```html title="index.html"
+<img src="anzac.png"/>
+```
+
+```js title="index.js"
+let element = document.querySelector("img");
+element.src = "biscotti.png";
+```
 
 ## Further reading
 
