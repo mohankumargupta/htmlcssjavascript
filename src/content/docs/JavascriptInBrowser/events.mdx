@@ -5,6 +5,33 @@ sidebar:
   order: 3
 ---
 
+import { Aside, LinkButton } from '@astrojs/starlight/components';
+
+<Aside type="tip">
+To react on events we can assign an event handler, a function that runs when event occurs.
+
+Two ways to do this.
+
+First way:  uses on[event] attribute on HTML element.
+
+```html
+<button onclick="myFunction()">Click me</button>
+```
+
+Second way: In JavaScript click is the event, myFunction is the event handler.
+
+```js
+button.addEventListener("click", myFunction);
+```
+</Aside>
+
+## Events
+
+<p><LinkButton target="_blank" href="" variant="secondary">click</LinkButton>element clicked</p>
+<p><LinkButton target="_blank" href="" variant="secondary">mouseover</LinkButton>mouse enters element</p>
+<p><LinkButton target="_blank" href="" variant="secondary">mouseout</LinkButton>mouse leaves element</p>
+<p><LinkButton target="_blank" href="" variant="secondary">mousedown</LinkButton>mouse is pressed</p>
+<p><LinkButton target="_blank" href="" variant="secondary">mouseup</LinkButton>mouse is released </p>
 
 ## Further Reading
 <p><a href="https://www.w3schools.com/jsref/dom_obj_event.asp">Events on w3schools.com</a></p>
